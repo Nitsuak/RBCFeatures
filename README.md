@@ -7,7 +7,7 @@ Hosted via GitHub Pages at `https://<your-username>.github.io/<repo-name>/`
 
 1. Push this repo to GitHub.
 2. In your repo’s **Settings → Pages**, set the source to the `main` branch and `/ (root)`.
-3. Visit `https://<your-username>.github.io/<repo-name>/`.
+3. Visit `https://Nitsuak.github.io/RBCFeatures/`.
 
 ## Files
 
