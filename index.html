@@ -4,179 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RBC Addon — Fine-Tune Performance</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-  <style>
-    body {
-      background-color: #000000;
-    }
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 0.375rem;
-      border: 1px solid #4B5563;
-      background-color: #2d2d2d;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
-                  0 2px 4px -1px rgba(0,0,0,0.06);
-    }
-    .video-container video,
-    .video-container img {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-    }
-    .feature-card {
-      background-color: #2d2d2d;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
-                  0 2px 4px -1px rgba(0,0,0,0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      text-align: center;
-    }
-  </style>
+  <!-- optional Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
-<body class="text-gray-200">
-  <section id="tuning" class="p-8 rounded-lg shadow-lg">
-    <h2 class="text-4xl font-semibold text-center text-white mb-12">
-      Fine-Tune Performance
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+<body>
+  <section id="tuning">
+    <h2>Fine-Tune Performance</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       <!-- Wheels & Tires -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/rqcwhvmnd96y0vtrs589340jgox2" 
-               alt="Demo of Wheels & Tires Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/tires.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Wheels & Tires</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Adjust wheel pivot, steering angle, grip, pressure, and visual deformation.
-        </p>
-        <ul class="list-disc pl-5 space-y-1 text-gray-400 text-xs text-left">
+        <h3>Wheels & Tires</h3>
+        <p>Adjust wheel alignment, grip, and pressure for optimal handling.</p>
+        <ul>
           <li>Pivot & camber angles</li>
-          <li>Friction, resistance, PSI</li>
-          <li>Visual deflection & offset</li>
+          <li>Tire friction, PSI & size</li>
+          <li>Visual deformation</li>
         </ul>
       </div>
 
       <!-- Suspension -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/o06g7p3ygrtgiabudqkwy5mut9hx" 
-               alt="Demo of Suspension Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/suspension.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Suspension</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Control suspension travel, spring stiffness, and damping for precise handling.
-        </p>
-        <ul class="list-disc pl-5 space-y-1 text-gray-400 text-xs text-left">
+        <h3>Suspension</h3>
+        <p>Fine-tune travel, stiffness, and damping for balanced ride quality.</p>
+        <ul>
           <li>Compression & extension limits</li>
           <li>Spring firmness</li>
-          <li>Bounce and rebound control</li>
+          <li>Bounce control</li>
         </ul>
       </div>
 
       <!-- Drivetrain -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/z72777bjq55nrjr0bkonfdn0ozs9" 
-               alt="Demo of Drivetrain Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/drivetrain.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Drivetrain</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Select drivetrain layout and axle types to define power and steering behavior.
-        </p>
-        <ul class="list-disc pl-5 space-y-1 text-gray-400 text-xs text-left">
-          <li>Drive Trains: 2WD, 4WD, FWD, RWD, etc</li>
-          <li>Axle Types: Drive, steering, dead, differential axles</li>
+        <h3>Drivetrain</h3>
+        <p>Select drive type and axle settings for precise power delivery.</p>
+        <ul>
+          <li>2WD, 4WD, FWD, RWD</li>
+          <li>Drive, steering & differential axles</li>
         </ul>
       </div>
 
       <!-- Body -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/vebsgqps6hjnuhqn6y3yaaflynzd" 
-               alt="Demo of Body Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/body.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Body</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Set total weight, center of gravity, and collision shape position.
-        </p>
-        <ul class="list-disc pl-5 space-y-1 text-gray-400 text-xs text-left">
-          <li>Overall mass & distribution</li>
-          <li>Convex or mesh collisions</li>
+        <h3>Body</h3>
+        <p>Define mass, center of gravity, and collision parameters.</p>
+        <ul>
+          <li>Total weight & balance</li>
+          <li>Collision shape & position</li>
         </ul>
       </div>
 
       <!-- Engine -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/whstyj3brz5wepxyi426rfttykh9" 
-               alt="Demo of Engine Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/engine.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Engine</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Configure speed, torque, torque curve, gear ratios, and RPM response.
-        </p>
-        <ul class="list-disc pl-5 space-y-1 text-gray-400 text-xs text-left">
-          <li>Basic: speed & torque</li>
-          <li>Advanced: RPM, torque curves, gears, shift behavior</li>
-
+        <h3>Engine</h3>
+        <p>Configure power, torque curve, and transmission settings.</p>
+        <ul>
+          <li>Basic speed & torque</li>
+          <li>Advanced curves & gears</li>
         </ul>
       </div>
 
       <!-- Downward Force -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/mgcrbsvtw7po4rcp7m6z052d8543" 
-               alt="Demo of Downward Force Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/downward-force.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Downward Force</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Apply adjustable downforce for extra traction at high speeds.
-        </p>
+        <h3>Downward Force</h3>
+        <p>Boost downforce to improve grip at speed.</p>
       </div>
 
       <!-- Lean Force -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/be6uwer3uj1zffkuxwh2lda7trnf" 
-               alt="Demo of Lean Force Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/lean-force.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Lean Force</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Adjust lean angle and strength for vehicles.
-        </p>
+        <h3>Lean Force</h3>
+        <p>Control lean angle and stability for two-wheeled rigs.</p>
       </div>
 
       <!-- Traction Control -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/g69i98mpenaafikt5szjbain0go1" 
-               alt="Demo of Traction Control Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/traction-control.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Traction Control</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Manage wheel slip with auto traction control and friction settings.
-        </p>
+        <h3>Traction Control</h3>
+        <p>Manage wheel slip for reliable traction.</p>
       </div>
 
       <!-- Drift Control -->
       <div class="feature-card">
-        <div class="video-container mb-2 border-gray-600">
-          <img src="https://public-files.gumroad.com/o5dowpry1h85vgmc4ls1rz4fygpg" 
-               alt="Demo of Drift Control Tuning GIF" loading="lazy"/>
+        <div class="video-container">
+          <video src="assets/videos/drift-control.mp4" autoplay muted loop></video>
         </div>
-        <h3 class="text-xl font-semibold text-white">Drift Control</h3>
-        <p class="text-gray-400 text-sm mb-2">
-          Fine-tune drifting abitility with Drift Control.
-        </p>
+        <h3>Drift Control</h3>
+        <p>Enable precise drift behavior with adjustable bias.</p>
       </div>
 
     </div>
